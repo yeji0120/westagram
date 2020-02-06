@@ -31,7 +31,7 @@ const sendMessage=()=>{
 
         goToBottom();
     }
-        buttonOff();
+    buttonOff();
 }
 
 const goToBottom=()=>{
