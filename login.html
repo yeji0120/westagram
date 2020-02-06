@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram - login</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/login.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+        <div class="login-container">
+            <div class="inner-container">
+                <img class="logo-img" src="./imgs/logo-text.png">
+                <div>
+                    <input oninput="btnHandler()" class="id-input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
+                    <input oninput="btnHandler()" class="password-input" type="password" placeholder="비밀번호"/>
+                </div>
+                <button onclick="pagePush()" class="login-btn">로그인</button>
+                <div class="or-container">
+                    <div class="or-line"></div>
+                    <div class="or">또는</div>
+                    <div class="or-line"></div>
+                </div>
+                <div class="fb-container">
+                    <img class="fb-icon" src="./imgs/facebook-icon.png"/>
+                    <div class="fb-text">Facebook으로 로그인</div>
+                </div>
+                <div class="forgot-password">비밀번호를 잊으셨나요?</div>
+            </div>
+        </div>  
+    </div>  
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    width: 348px;
+    height: 358px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    background-color: #fff;;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+.inner-container{
+    width: 250px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;  
+}
+.logo-img{
+    width: 175px;
+    height: 51px;
+}
+input{
+    width: 250px;
+    height: 20px;
+    padding: 9px 0 7px 8px;
+    margin-bottom: 5px;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    color: #b7b7b7;
+    font-size: 12px;
+    background-color: #fafafa;
+    outline: none;
+    display: flex;
+}
+input:focus{
+    width: 250px;
+    height: 20px;
+    padding: 9px 0 7px 8px;
+    margin-bottom: 5px;
+    border: 1px solid #b2b2b2;
+    border-radius: 2px;
+    color: #b7b7b7;
+    font-size: 12px;
+    background-color: #fafafa;
+    outline: none;
+    display: flex;
+}
+.login-btn{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 259px;
+    height: 30px;
+    background-color: #3798f0;
+    opacity: 0.5;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.login-btn-hover{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 259px;
+    height: 30px;
+    background-color: #3798f0;
+    opacity: 0.5;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+.or-container{
+    width: 107%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.or{
+    color: #b9b9b9;
+    font-size: 13px;
+    font-weight: 450;
+}
+.or-line{
+    width: 40%;
+    height: 1px;
+    border-top: 1px solid #b9b9b9;
+}
+.fb-container{
+    display: flex;
+    align-items: center;
+}
+.fb-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.fb-text{
+    color: #385185;
+    font-weight: bold;
+}
+.forgot-password{
+    color: #385185;
+    font-size: 13px;
+}

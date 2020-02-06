@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>westagram - main</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+     <link href="style/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="main-page-container">
+        <div class="nav-container">
+            <div class="nav-var-container">
+                <div class="nav-left-icon">
+                    <img class="logo-img" src="./imgs/logo-img.png"/>
+                    <img class="logo-text" src="./imgs/logo-text.png" />
+                </div>
+                <div>
+                    <input class="nav-input" type="text" placeholder="검색"/>
+                </div>
+                <div class="nav-right-icon">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <div class="feeds-container">
+                <div class="article">
+                    <div class="art-header">
+                        <div class="art-profile">
+                            <img class="profile-img" src="./imgs/profile-img.png"/>
+                            <div class="profile-name">IU_fullmoon_long</div>
+                        </div>
+                        <div>
+                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" style="width: 30px; height: 20px; margin-right: 15px;"/>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="art-img" src="./imgs/art-img.jpeg"/ ">
+                    </div>
+                    <div class="art-icon-container">
+                        <div class="art-left-icon">
+                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png"/>
+                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" />
+                            <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/share.png" />
+                        </div>
+                        <div>    
+                            <img class="art-right-icon" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" style="padding-left: 435px;"/>
+                        </div>
+                    </div>
+                    <div class="art-like-container">
+                        <img class="like-img" src="./imgs/like-img.jpeg"/>
+                        <div style="font-size: 12px;"> glittering_star님 외 10명이 좋아합니다</div>
+                    </div>
+                    <div>
+                        <div class="text-place"></div>
+                    </div>
+                    <form onsubmit="sendMessage(); return false;">
+                        <div class="text-container">
+                        <input class="text-input" type="text" oninput="changeBc()" placeholder="댓글 달기..." />
+                        <button type="submit" class="send-btn" onclick="sendMessage()">게시</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="right-container">
+                <div class="right-header">
+                    <img class="right-header-img" src="./imgs/right-header-img.jpeg"/>
+                    <div style="margin-left: 10px;">Hotel_Del_Luna</div>
+                </div>
+
+                <div class="story-container">
+                    <div class="story-header">
+                        <div class="story">스토리</div>
+                        <div class="story-more">모두 보기</div>
+                    </div>
+                    <div class="right-profile">
+                        <div>
+                            <img class="story-img" src="./imgs/story-img1.jpeg"/>
+                        </div>
+                        <div>
+                            <div class="story-name">siik_kim</div>
+                            <div class="story-time"">10분 전</div>
+                        </div>
+                    </div>
+                    <div class="right-profile">
+                        <div>
+                            <img class="story-img" src="./imgs/story-img2.jpeg"/>
+                        </div>
+                        <div>  
+                            <div class="story-name">seohui_choi</div>
+                            <div class="story-time"">20분 전</div>
+                        </div>
+                    </div>
+                    <div class="right-profile">
+                        <div>
+                            <img class="story-img" src="./imgs/story-img3.jpeg"/>
+                        </div>
+                        <div>
+                            <div class="story-name">hyeonjung_ji</div>
+                            <div class="story-time"">30분 전</div>
+                        </div>
+                    </div>
+                    <div class="right-profile">
+                        <div>
+                            <img class="story-img" src="./imgs/story-img4.jpeg"/>
+                        </div>
+                        <div>
+                            <div class="story-name">junseok_no</div>
+                            <div class="story-time"">1시간 전</div>
+                        </div>
+                    </div>
+                    <div class="right-profile">
+                        <div>
+                            <img class="story-img" src="./imgs/story-img5.jpeg"/>
+                        </div>
+                        <div>
+                            <div class="story-name">yuna_kim</div>
+                            <div class="story-time"">2시간 전</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recommend-container">
+                    <div class="recommend-header">
+                        <div class="recommend">회원님을 위한 추천</div>
+                        <div class="recommend-more">모두 보기</div>
+                    </div>
+
+                    <div class="recommend-profile">
+                        <div style="display: flex; align-items: center;">
+                            <img class="recommend-img" src="./imgs/recommend-img1.jpeg"/>
+                            <div class="recommend-name">sanchez</div>
+                        </div>
+                        <div>
+                            <div class="follow">팔로우</div>
+                        </div>
+                    </div>
+                    <div class="recommend-profile">
+                        <div style="display: flex; align-items: center;">
+                            <img class="recommend-img" src="./imgs/recommend-img2.jpeg"/>
+                            <div class="recommend-name">mira_lee</div>
+                        </div>
+                        <div>
+                            <div class="follow">팔로우</div>
+                        </div>
+                    </div>
+                    <div class="recommend-profile">
+                        <div style="display: flex; align-items: center;">
+                            <img class="recommend-img" src="./imgs/recommend-img3.jpeg"/>
+                            <div class="recommend-name">cheongmyeong_go</div>
+                        </div>
+                        <div>
+                            <div class="follow">팔로우</div>
+                        </div>
+                    </div>
+                    <div class="recommend-profile">
+                        <div style="display: flex; align-items: center;">
+                            <img class="recommend-img" src="./imgs/recommend-img4.jpeg"/>
+                            <div class="recommend-name">yeonu</div>
+                        </div>
+                        <div>
+                            <div class="follow">팔로우</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img class="footer-img" src="./imgs/footer-img.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
